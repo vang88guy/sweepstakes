@@ -12,11 +12,14 @@ namespace SweepStakes
         string firstname;
         string lasname;
         string email;
-        int registernumber;
+        string regnumber;
 
-            public Contestants()
+        public Contestants()
         {
-                
+            firstname = "";
+            lasname = "";
+            email = "";
+            regnumber = "";
         }
     }
 }
