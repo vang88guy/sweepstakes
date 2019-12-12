@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace SweepStakes
 {
+    
     class Contestants
     {
+        string firstname;
+        string lasname;
+        string email;
+        int registernumber;
+
+            public Contestants()
+        {
+                
+        }
     }
 }
