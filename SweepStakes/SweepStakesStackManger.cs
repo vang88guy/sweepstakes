@@ -14,7 +14,7 @@ namespace SweepStakes
         {
             stack = new Stack<string>();
         }
-        public void InsertSweepstakes()
+        public void InsertSweepstakes(SweepStakes sweepStakes)
         {
         }
         public void GetSweepstakes()

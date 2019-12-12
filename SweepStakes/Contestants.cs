@@ -6,20 +6,24 @@ using System.Threading.Tasks;
 
 namespace SweepStakes
 {
-    
-    class Contestants
+
+     public class Contestants
     {
         string firstname;
-        string lasname;
+        string lastname;
         string email;
-        string regnumber;
-
+        int regnumber;
+        public string Firstname { get{return firstname;} set { firstname = value; } }
+        public string Lastname { get { return lastname; } set { lastname = value; } }
+        public string Email { get { return email; } set { email = value; } }
+        public int Regnumber { get { return regnumber; } set { regnumber = value; } }
         public Contestants()
         {
             firstname = "";
-            lasname = "";
+            lastname = "";
             email = "";
-            regnumber = "";
+            regnumber = 0;
         }
+        
     }
 }

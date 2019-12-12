@@ -14,7 +14,7 @@ namespace SweepStakes
             queue = new Queue<string>();
         }
 
-        public void InsertSweepstakes() 
+        public void InsertSweepstakes(SweepStakes sweepStakes) 
         { 
         }
         public void GetSweepstakes() 
