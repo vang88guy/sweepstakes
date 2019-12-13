@@ -9,44 +9,30 @@ namespace SweepStakes
     static class UserInterface
     {
         public static string SweepStakes() 
-        {
-            string sweepstakes;
+        {         
             Console.WriteLine("What is the prize of your SweepStakes");
-            sweepstakes = Console.ReadLine().ToLower();
-            Console.WriteLine();
-            return sweepstakes;
+            return Console.ReadLine().ToLower();
         }
         public static string FirstName() 
-        {
-            string firstname;
+        {            
             Console.WriteLine("Please enter information");
             Console.WriteLine("First Name : ");
-            firstname = Console.ReadLine().ToLower();
-            Console.WriteLine();
-            return firstname;
+            return Console.ReadLine().ToLower();
         }
         public static string LastName()
         {
-            string lastname;
             Console.WriteLine("Last Name : ");
-            lastname = Console.ReadLine().ToLower();
-            Console.WriteLine();
-            return lastname;
+            return Console.ReadLine().ToLower();
         }
         public static string eMail()
-        {
-            string email;
+        {           
             Console.WriteLine("E mail : ");
-            email = Console.ReadLine().ToLower();
-            Console.WriteLine();
-            return email;
+            return Console.ReadLine().ToLower();        
         }
         public static void RegisterNumber(int number)
-        {
-           
+        {          
             Console.WriteLine("Registration Number : " + number);
-            Console.WriteLine();
-         
+            Console.WriteLine();       
         }
         public static void Winner(Contestants contestant) 
         {
@@ -54,16 +40,14 @@ namespace SweepStakes
                                "Email: " + contestant.Email + "\n"+
                                "Registration Number: "+ contestant.Regnumber);
         }
-        public static int PickManager() 
-        {
-            int choice;
-            Console.WriteLine("Which Manager system would you like to use, Stack or Queue?" + "\n"+
-                              "1: Stack"+"\n"+
-                              "2: Queue"+"\n"+
+        public static int PickManager()
+        {            
+            Console.WriteLine("Which Manager system would you like to use, Stack or Queue?" + "\n" +
+                              "1: Stack" + "\n" +
+                              "2: Queue" + "\n" +
                               "Enter number");
-            choice = Int32.Parse(Console.ReadLine());
-            Console.WriteLine();
-            return choice;
+            return Int32.Parse(Console.ReadLine());
         }
+            
     }
 }
