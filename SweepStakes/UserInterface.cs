@@ -45,11 +45,14 @@ namespace SweepStakes
         {
            
             Console.WriteLine("Registration Number : " + number);
+            Console.WriteLine();
          
         }
-        public static void Winner(string win) 
+        public static void Winner(Contestants contestant) 
         {
-            Console.WriteLine("Winner: " + win);
+            Console.WriteLine("Winner: " + contestant.Firstname +" "+ contestant.Lastname +"\n"+
+                               "Email: " + contestant.Email + "\n"+
+                               "Registration Number: "+ contestant.Regnumber);
         }
     }
 }

@@ -13,6 +13,9 @@ namespace SweepStakes
             Contestants contestant = new Contestants();
             SweepStakes SS = new SweepStakes();
             SS.RegisterContestant(contestant);
+            SS.RegisterContestant(contestant);
+            SS.RegisterContestant(contestant);
+            SS.PickWinner();
             Console.WriteLine();
         }
     }

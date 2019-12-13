@@ -54,19 +54,14 @@ namespace SweepStakes
             UserInterface.RegisterNumber(reg);
             people.Add(contestant.Regnumber, contestant);
         }
-        public string PickWinner() 
-        {
-            
-            string win;
-            Random random = new Random();
-            winner = random.Next(people.Count);
-            win = (people[winner]).ToString();
-            UserInterface.Winner(win);
-            return win;
+        public  void PickWinner() 
+        {         
+            Random random = new Random(); 
+            contestant = (people[random.Next(people.Count)]);            
         }
         public void PrintContestantInfo(Contestants contestant) 
-        { 
-            
+        {
+            UserInterface.Winner(contestant);
         }
 
     }
