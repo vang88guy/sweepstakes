@@ -49,6 +49,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SweepStakes.cs" />
+    <Compile Include="SweepStakesFactory.cs" />
     <Compile Include="SweepStakesQueueManger.cs" />
     <Compile Include="SweepStakesStackManger.cs" />
     <Compile Include="UserInterface.cs" />

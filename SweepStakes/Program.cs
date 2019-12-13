@@ -16,6 +16,7 @@ namespace SweepStakes
             SS.RegisterContestant(contestant);
             SS.RegisterContestant(contestant);
             SS.PickWinner();
+            SS.PrintContestantInfo(contestant);
             Console.WriteLine();
         }
     }

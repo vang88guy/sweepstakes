@@ -17,7 +17,7 @@ namespace SweepStakes
         public void InsertSweepstakes(SweepStakes sweepStakes) 
         { 
         }
-        public void GetSweepstakes() 
+        public void GetOutSweepstakes() 
         { 
         }
     }
