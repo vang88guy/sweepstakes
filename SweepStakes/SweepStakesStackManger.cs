@@ -9,16 +9,21 @@ namespace SweepStakes
     
     class SweepStakesStackManger : ISweepStakesManger
     {
-        Stack<string> stack;
+        Stack<SweepStakes> stack;
+        SweepStakes sweepStakes;
         public SweepStakesStackManger()
         {
-            stack = new Stack<string>();
+            
+            stack = new Stack<SweepStakes>();
         }
         public void InsertSweepstakes(SweepStakes sweepStakes)
         {
+            sweepStakes = new SweepStakes();
+            stack.Push(sweepStakes);
         }
         public void GetOutSweepstakes()
         {
+            stack.Pop();
         }
     }
 }
