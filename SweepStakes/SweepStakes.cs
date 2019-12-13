@@ -9,14 +9,12 @@ namespace SweepStakes
     public class SweepStakes
     {
         Dictionary<int, Contestants> people; 
-        string sweepstakes;
-        public int winner;
-        string winnerinfo;
+        string name;
 
         Contestants contestant;
         public SweepStakes()
         {
-            sweepstakes = "";
+            name = "";
             contestant = new Contestants();
             people = new Dictionary<int, Contestants>();
             SweepstakeName();
@@ -24,7 +22,7 @@ namespace SweepStakes
         }
         public void SweepstakeName() 
         {
-            sweepstakes = UserInterface.SweepStakes();
+            name = UserInterface.SweepStakes();
         }
         //public string FirstName() 
         //{

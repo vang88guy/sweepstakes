@@ -11,7 +11,7 @@ namespace SweepStakes
         public static string SweepStakes() 
         {
             string sweepstakes;
-            Console.WriteLine("What is the name of your SweepStakes");
+            Console.WriteLine("What is the prize of your SweepStakes");
             sweepstakes = Console.ReadLine().ToLower();
             Console.WriteLine();
             return sweepstakes;
@@ -53,6 +53,16 @@ namespace SweepStakes
             Console.WriteLine("Winner: " + contestant.Firstname +" "+ contestant.Lastname +"\n"+
                                "Email: " + contestant.Email + "\n"+
                                "Registration Number: "+ contestant.Regnumber);
+        }
+        public static int PickManager() 
+        {
+            Console.WriteLine("Which Manager system would you like to use, Stack or Queue?" + "\n"+
+                              "1: Stack"+"\n"+
+                              "2: Queue"+"\n"+
+                              "Enter number");
+            choice = Int32.Parse(Console.ReadLine());
+            Console.WriteLine();
+            return choice;
         }
     }
 }
