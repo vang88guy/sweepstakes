@@ -21,9 +21,10 @@ namespace SweepStakes
             sweepStakes = new SweepStakes();
             stack.Push(sweepStakes);
         }
-        public void GetOutSweepstakes()
+        public SweepStakes GetOutSweepstakes()
         {
-            stack.Pop();
+            sweepStakes = stack.Pop();
+            return sweepStakes;
         }
     }
 }

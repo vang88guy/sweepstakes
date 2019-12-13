@@ -57,7 +57,7 @@ namespace SweepStakes
         public  void PickWinner() 
         {         
             Random random = new Random(); 
-            contestant = (people[random.Next(people.Count)]);            
+            contestant = (people[random.Next((people.Count)+1)]);            
         }
         public void PrintContestantInfo(Contestants contestant) 
         {
