@@ -56,6 +56,7 @@ namespace SweepStakes
         }
         public static int PickManager() 
         {
+            int choice;
             Console.WriteLine("Which Manager system would you like to use, Stack or Queue?" + "\n"+
                               "1: Stack"+"\n"+
                               "2: Queue"+"\n"+

@@ -10,12 +10,14 @@ namespace SweepStakes
     {
         
         
-      
-        public static ISweepStakesManager ChooseManager(int choice)
+
+
+        public static ISweepStakesManager ChooseManager()
         {
             ISweepStakesManager sweep;
-            //int  choice = UserInterface.PickManager();
-            switch (choice) 
+            int choices;
+            choices = UserInterface.PickManager();
+            switch (choices) 
             {
                 case 1:
                     sweep = new SweepStakesStackManger();

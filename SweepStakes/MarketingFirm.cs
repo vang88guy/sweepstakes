@@ -8,9 +8,11 @@ namespace SweepStakes
 {
     class MarketingFirm
     {
-        public MarketingFirm()
+        ISweepStakesManager manager;
+        public MarketingFirm(ISweepStakesManager manager)
         {
-
+            this.manager = manager;
         }
+       
     }
 }
